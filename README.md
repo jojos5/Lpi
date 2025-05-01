@@ -1,3 +1,6 @@
+--hello before using this i didn't actually credit anyone in this script because this may have some people i don't know.
+
+
 local Players = game:GetService("Players")
 local HttpService = game:GetService("HttpService")
 _G.crashselected = false
@@ -391,71 +394,7 @@ print("the btools id is 550177512")
 print("ban\nkick\ntoisland\nslock\nkill\nfling\ndelinv\nspeed\njumppower\nto\nautokill\nslockfriends\ndelallisland\ndisarm\nairwalk\nf3x\ndelgearboard\ndelmodel\ndelf3x\ndelmusic\ndelplate\ndelgearsave\ndelxmas\ndelbrick\ndelisland\ndelf3xhandler\ndelp2w\nantitool\nwl\nunwl\ninfgod\nantibug\nloadout\nregen\nregensp\nsink\nnd\nnojoint\nsit\ninvisf3x\nvoid\gear\nscream\ncage\nnop2w\np2w\nsbl\nmusiclock\nunmusiclock\nping\nfreeze\nbtools?\nfungear\nspamgear(2args)\ncrashpart\nbringparts\nbombox\nanticrash(this_works_with_crashpart)\ngs\nfarm\nunfarm\nresize\nbringparts\nfungear\nbring\nfungear\n//crash\n//vampirecrash\nreanim\nimport")
 end)
 cb("f3x", function() 
-    local Players = game:GetService("Players")
-local StarterGui = game:GetService("StarterGui")
-local LocalPlayer = Players.LocalPlayer
-local Backpack = LocalPlayer:WaitForChild("Backpack")
-local StarterGear = LocalPlayer:WaitForChild("StarterGear")
-local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
-local HumanoidRootPart = Character:WaitForChild("HumanoidRootPart")
-local Humanoid = Character:WaitForChild("Humanoid")
-local originalPosition = HumanoidRootPart.Position
--- Function to send notifications
-local function sendNotification(title, text, duration)
-    StarterGui:SetCore("SendNotification", {
-        Title = title;
-        Text = text;
-        Duration = duration;
-    })
-end
-local function hasF3X()
-    for _, item in ipairs(Backpack:GetChildren()) do
-        if item:IsA("Tool") and item.Name == "F3X" then
-            return true
-        end
-    end
-    for _, item in ipairs(StarterGear:GetChildren()) do
-        if item:IsA("Tool") and item.Name == "F3X" then
-            return true
-        end
-    end
-    return false
-end
-if hasF3X() then
-    sendNotification("Success", "F3X is already in your inventory!", 5)
-    return
-end
-sendNotification("Script Started", "Waiting for F3X to appear...", 5)
-Humanoid.WalkSpeed = 0
-local foundF3X = false
-local startTime = tick()
-while not foundF3X do
-    local positions = {
-        CFrame.new(11.498, 3.2, -116.658),
-        CFrame.new(10.498, 3.2, -116.658),
-        CFrame.new(11.498, 4.2, -116.658),
-        CFrame.new(11.498, 3.2, -116.658),
-        CFrame.new(10.498, -2.2, -116.658),
-        CFrame.new(11.498, -1.2, -116.658)
-    }
-    for _, pos in ipairs(positions) do
-        HumanoidRootPart.CFrame = pos
-        task.wait(0.01)
-    end
-    if hasF3X() then
-        foundF3X = true
-        break
-    end
-    if tick() - startTime > 10 then
-        sendNotification("Script Failed", "F3X not found after 10 seconds.", 5)
-        break
-    end
-end
-Humanoid.WalkSpeed = 16
-Character:MoveTo(originalPosition)
-if foundF3X then
-    sendNotification("Success", "F3X found in inventory!", 5)
-end 
+    gear(550177512,1)
 end)
 cb("toisland", function()
     local player = game.Players.LocalPlayer
