@@ -1918,69 +1918,7 @@ for _Index, Target in pairs(GetPlayer(args[2])) do
         local Tool = GetPath()
         if not Tool then return end
         local function Task()
-        local args = {
-    [1] = "CreatePart",
-    [2] = "Wedge",
-    [3] = CFrame.new(Target.Character.HumanoidRootPart.Position.X, Target.Character.HumanoidRootPart.Position.Y, Target.Character.HumanoidRootPart.Position.Z) * CFrame.Angles(-0, 0, -0)
-}
-
-game:GetService("Players").LocalPlayer.Character.F3X:FindFirstChildOfClass("BindableFunction"):FindFirstChildOfClass("RemoteFunction"):InvokeServer(unpack(args))
-local args = {
-    [1] = "CreateWelds",
-    [2] = {
-        [1] = workspace.Wedge
-    },
-    [3] = Target.Character.HumanoidRootPart
-}
-game:GetService("Players").LocalPlayer.Character.F3X:FindFirstChildOfClass("BindableFunction"):FindFirstChildOfClass("RemoteFunction"):InvokeServer(unpack(args))
-local args = {
-    [1] = "SyncSurface",
-    [2] = {
-        [1] = {
-            ["Part"] = Workspace.Wedge,
-            ["Surfaces"] = {
-                ["Transparency\0"] = 1,
-                ["CanCollide\0"] = false,
-                ["Position\0"] = Vector3.new(root.Position.X, root.Position.Y, root.Position.Z),
-                ["Name\0."] = "2-d29f7651bfe34b2b94cdc107f86caac4"
-               --[[ ["Locked\0."] = true]]
-            }
-        }
-    }
-}
-game:GetService("Players").LocalPlayer.Character.F3X:FindFirstChildOfClass("BindableFunction"):FindFirstChildOfClass("RemoteFunction"):InvokeServer(unpack(args))
-local args = {
-    [1] = "SyncSurface",
-    [2] = {
-        [1] = {
-            ["Part"] = Workspace:FindFirstChild("2-d29f7651bfe34b2b94cdc107f86caac4"),
-            ["Surfaces"] = {
-                ["Anchored\0"] = true
-            }
-        }
-    }
-}
-game:GetService("Players").LocalPlayer.Character.F3X:FindFirstChildOfClass("BindableFunction"):FindFirstChildOfClass("RemoteFunction"):InvokeServer(unpack(args))
-local args = {
-    [1] = "SyncSurface",
-    [2] = {
-        [1] = {
-            ["Part"] = workspace:FindFirstChild("2-a9885cad2cd5400590b1e85d8ac8ecd2"),
-            ["Surfaces"] = {
-                ["Position\0"] = Vector3.new(root.Position.X, root.Position.Y, root.Position.Z),
-                ["Anchored\0"] = false
-            }
-        }
-    }
-}
-
-game:GetService("Players").LocalPlayer.Character.F3X:FindFirstChildOfClass("BindableFunction"):FindFirstChildOfClass("RemoteFunction"):InvokeServer(unpack(args))
-local args = {
-    [1] = "UndoRemove",
-    [2] = {
-        [1] = workspace:FindFirstChild("2-d29f7651bfe34b2b94cdc107f86caac4")
-    }
-}
+        
 game:GetService("Players").LocalPlayer.Character.F3X:FindFirstChildOfClass("BindableFunction"):FindFirstChildOfClass("RemoteFunction"):InvokeServer(unpack(args))
         end
         if Tool.Parent == player.Backpack then
@@ -2016,76 +1954,6 @@ for _Index, Target in pairs(GetPlayer(args[2])) do
         end
 refresh(Target)
 end end)
-cb("crash", function()
-    for _Index, Target in pairs(GetPlayer(args[2])) do
-    local root = game.Players.LocalPlayer.Character.HumanoidRootPart
-    local function bring(Target)
-        local Tool = GetPath()
-        if not Tool then return end
-        local function Task()
-local args = {
-    [1] = "CreatePart",
-    [2] = "Wedge",
-    [3] = CFrame.new(Target.Character.HumanoidRootPart.Position.X, Target.Character.HumanoidRootPart.Position.Y, Target.Character.HumanoidRootPart.Position.Z) * CFrame.Angles(-0, 0, -0)
-}
-
-game:GetService("Players").LocalPlayer.Character.F3X:FindFirstChildOfClass("BindableFunction"):FindFirstChildOfClass("RemoteFunction"):InvokeServer(unpack(args))
-local args = {
-    [1] = "CreateWelds",
-    [2] = {
-        [1] = workspace.Wedge
-    },
-    [3] = Target.Character.HumanoidRootPart
-}
-game:GetService("Players").LocalPlayer.Character.F3X:FindFirstChildOfClass("BindableFunction"):FindFirstChildOfClass("RemoteFunction"):InvokeServer(unpack(args))
-local args = {
-    [1] = "SyncSurface",
-    [2] = {
-        [1] = {
-            ["Part"] = Workspace.Wedge,
-            ["Surfaces"] = {
-                ["Transparency\0"] = 1,
-                ["CanCollide\0"] = false,
-                ["Position\0"] = Vector3.new(30.2099876, 2.80000806, -34.4999962),
-                ["Name\0."] = "2-d29f7651bfe34b2b94cdc107f86caac4"
-                --["Locked\0."] = true
-            }
-        }
-    }
-}
-game:GetService("Players").LocalPlayer.Character.F3X:FindFirstChildOfClass("BindableFunction"):FindFirstChildOfClass("RemoteFunction"):InvokeServer(unpack(args))
-local args = {
-    [1] = "SyncSurface",
-    [2] = {
-        [1] = {
-            ["Part"] = Workspace:FindFirstChild("2-d29f7651bfe34b2b94cdc107f86caac4"),
-            ["Surfaces"] = {
-                ["Anchored\0"] = true
-            }
-        }
-    }
-}
-game:GetService("Players").LocalPlayer.Character.F3X:FindFirstChildOfClass("BindableFunction"):FindFirstChildOfClass("RemoteFunction"):InvokeServer(unpack(args))
-local args = {
-    [1] = "SyncSurface",
-    [2] = {
-        [1] = {
-            ["Part"] = workspace:FindFirstChild("2-a9885cad2cd5400590b1e85d8ac8ecd2"),
-            ["Surfaces"] = {
-                ["Position\0"] = Vector3.new(30.2099876, 2.80000806, -34.4999962),
-                ["Anchored\0"] = false
-            }
-        }
-    }
-}
-
-game:GetService("Players").LocalPlayer.Character.F3X:FindFirstChildOfClass("BindableFunction"):FindFirstChildOfClass("RemoteFunction"):InvokeServer(unpack(args))
-local args = {
-    [1] = "UndoRemove",
-    [2] = {
-        [1] = workspace:FindFirstChild("2-d29f7651bfe34b2b94cdc107f86caac4")
-    }
-}
 
 game:GetService("Players").LocalPlayer.Character.F3X:FindFirstChildOfClass("BindableFunction"):FindFirstChildOfClass("RemoteFunction"):InvokeServer(unpack(args))
         end
