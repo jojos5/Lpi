@@ -71,7 +71,7 @@ if not _G.RenderingEnabled then
             warn("file loaded")
         else
            -- rconsoleerr("Creating file ServersHopped.txt...\n")
-            writefile("ServersHopped.txt", "i got muted in sc fun\n")
+            writefile("ServersHopped.txt", "i\n")
         end 
 
         if file2 then 
@@ -390,7 +390,7 @@ function GetPlayer(Target)
     end
 end
 cb("cmds", function() 
-print("the btools id is 550177512")
+print("the btools id is 550177512. Never mind is patched")
 print("ban\nkick\ntoisland\nslock\nkill\nfling\ndelinv\nspeed\njumppower\nto\nautokill\nslockfriends\ndelallisland\ndisarm\nairwalk\nf3x\ndelgearboard\ndelmodel\ndelf3x\ndelmusic\ndelplate\ndelgearsave\ndelxmas\ndelbrick\ndelisland\ndelf3xhandler\ndelp2w\nantitool\nwl\nunwl\ninfgod\nantibug\nloadout\nregen\nregensp\nsink\nnd\nnojoint\nsit\ninvisf3x\nvoid\gear\nscream\ncage\nnop2w\np2w\nsbl\nmusiclock\nunmusiclock\nping\nfreeze\nbtools?\nfungear\nspamgear(2args)\ncrashpart\nbringparts\nbombox\nanticrash(this_works_with_crashpart)\ngs\nfarm\nunfarm\nresize\nbringparts\nfungear\nbring\nfungear\n//crash\n//vampirecrash\nreanim\nimport")
 end)
 cb("f3x", function() 
