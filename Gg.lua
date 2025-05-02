@@ -2777,5 +2777,5 @@ local starttime2 = os.clock()
 local diff_seconds = starttime2 - starttime1
 local formatted_time = string.format("%.1f", diff_seconds)
 game.TextChatService.TextChannels.RBXSystem:DisplaySystemMessage("<font color=\"rgb(255, 0, 0)\">Loaded successful in ms:" .. formatted_time .. "</font>")
-game.TextChatService.TextChannels.RBXSystem:DisplaySystemMessage("<font color=\"rgb(23, 252, 3)\">Use cmds to view every command.</font>")
+game.TextChatService.TextChannels.RBXSystem:DisplaySystemMessage("<font color=\"rgb(23, 252, 3)\">Use cmds to view every command. and open console</font>")
 
